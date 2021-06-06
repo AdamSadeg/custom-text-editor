@@ -30,7 +30,7 @@ class FileTab(Frame):
 
         for i in range(len(words) - 1):
             if words[i + 1] == "=":
-                self.variables.append((words[i], words[i] + 2))
+                self.variables.append((words[i], words[i + 2]))
 
         return self.variables
 
